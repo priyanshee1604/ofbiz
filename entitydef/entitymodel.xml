@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<entitymodel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://ofbiz.apache.org/dtds/entitymodel.xsd">
+    <!-- ========================================================= -->
+    <!-- ======================== Defaults ======================= -->
+    <!-- ========================================================= -->
+    <title>Entity of Priyanshee Component</title>
+    <description>None</description>
+    <copyright></copyright>
+    <version></version>
+
+    <entity entity-name="DifficultyLevel" title="DifficultyLeveltitle" table-name="tablename" package-name="org.apache.ofbiz.priyanshee">
+        <description>Define the level of difficulty in learning a dance.</description>
+        <field name="levels" type="short-varchar"/>
+        <field name="description" type="description"/>
+        <prim-key field="levels"/>
+    </entity>
+
+    <entity entity-name="Dance" table-name="dance" package-name="org.apache.ofbiz.priyanshee" title="totest">
+        <description>This is an Entity that describes various dance forms accross India.</description>
+        <field name="danceName" type="id" col-name="danceName"/>
+        <field name="fromState" type="short-varchar" col-name="State" />
+        <field name="difficultyLevel" type="short-varchar" col-name="difficultyLevel"/>
+        <field name="requiresEquipments" type="indicator" col-name="requiresEquipments"/>
+        <prim-key field="danceName"/>
+        <relation type="one" rel-entity-name="DifficultyLevel">
+            <key-map field-name="difficultyLevel" rel-field-name="levels"/>
+        </relation>
+    </entity>
+</entitymodel>

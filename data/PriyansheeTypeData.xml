@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<entity-engine-xml>
+    <DifficultyLevel levels="Beginner" description="For absolute beginners with no prior dance experience or knowledge of basic steps and step patterns."/>
+    <DifficultyLevel levels="Newcomer" description=" For those with some basic dance experience, but still learning the fundamentals."/>
+    <DifficultyLevel levels="Pre-Bronze" description="For dancers with some experience and proficiency in basic steps, but not yet ready for more advanced techniques."/>
+    <DifficultyLevel levels="Bronze" description="For dancers with a solid foundation in basic steps and able to execute simple choreography."/>
+    <DifficultyLevel levels="Silver" description="For dancers with intermediate skills, able to execute more complex choreography and demonstrate improved technique."/>
+    <DifficultyLevel levels="Gold" description="For advanced dancers with refined technique, able to execute complex choreography and demonstrate mastery of dance principles."/>
+    <DifficultyLevel levels="Pre-Champion" description="For experienced dancers preparing for competitive championships, requiring high-level technique and precision."/>
+    <DifficultyLevel levels="Champion" description="For elite dancers competing at the highest level, requiring exceptional technique, artistry, and performance quality."/>
+</entity-engine-xml>
